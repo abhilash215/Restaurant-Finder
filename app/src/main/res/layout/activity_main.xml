@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainactivity"
+    tools:context="com.example.abhiu.tnapp.MainActivity"
+    android:background="@color/lightYellow">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:id="@+id/cityTitle"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:textColor="@color/black"
+    android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcome"
+            android:text="@string/welcome"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/type"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/welcome"
+            android:textColor="@color/black"
+            android:text="@string/enter"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView_h"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/appicon1"
+            app:civ_border_width="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:civ_border_color="#FF000000"/>
+
+    </RelativeLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/cityTitle"/>
+
+</RelativeLayout>

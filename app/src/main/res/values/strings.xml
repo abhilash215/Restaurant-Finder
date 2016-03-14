@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TNapp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome to Restaurant Finder</string>
+    <string name="enter">Enter the search city in search box </string>
+    <string name="name">Abhilash Udayashankar</string>
+    <string name="student">Computer Engineering Grad Student</string>
+    <string name="email">audayash@syr.edu</string>
+</resources>
